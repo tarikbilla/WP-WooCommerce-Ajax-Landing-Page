@@ -42,8 +42,6 @@ jQuery(document).ready(function($) {
         });
     }
 
-    // --- EVENT LISTENERS ---
-
     $(document).on('found_variation', '.lp-product-wrapper form.variations_form', function(event, variation) {
         var variationId = variation.variation_id;
         var checkoutQty = $('.woocommerce-checkout-review-order-table input.qty').val() || 1;
